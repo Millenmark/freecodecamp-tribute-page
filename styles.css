@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,200;7..72,300;7..72,400;7..72,500;7..72,600;7..72,700;7..72,800;7..72,900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+span {
+  font-size: 3rem;
+}
+
+/* Container */
+.container {
+  width: min(100%, 850px);
+  margin-inline: auto;
+}
+
+/* Hero Section Styling */
+.hero {
+  /* font-size: 1.5rem; */
+  text-align: center;
+  padding: 1rem;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("https://drive.google.com/uc?export=view&id=1-Et2sEwHRwk8UbiqZjsesIfJXfA74RN5");
+  background-position: 0% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+figcaption, #tribute-link {
+  display: none;
+}
+
+/* Content */
+.content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+
+.content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.content-text {
+  flex: 0 1 425px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 2rem;
+  font-family: 'Literata', serif;;
+  font-weight: 500;
+}
+
+.content-image {
+  flex: 1 0 410px;
+}
+
+.last-content {
+  text-align: center;
+  margin-block: 5rem;
+  font-size: 1.2rem;
+}
+
+#image {
+  object-position: center;
+}
+
